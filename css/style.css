@@ -86,7 +86,7 @@ header nav ul li a {
 -------------------------------------------------------------------*/
 .section-hero {
   width: 100%;
-  padding: 20px 0 90px 0;
+  padding: 100px 0;
   background: url(..//images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -100,7 +100,6 @@ header nav ul li a {
 }
 
 .hero {
-  padding-top: 100px;
   text-align: center;
   color: #fff;
   position: relative;
@@ -291,13 +290,22 @@ header nav ul li a {
 
 .blogs-gallery {
   display: flex;
+  align-items: center;
 }
 
-.left-gallery,
+.left-gallery img,
+.right-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .right-gallery {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .blog-image {
-  width: 100%;
+  object-fit: cover;
 }
