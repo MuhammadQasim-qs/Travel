@@ -20,6 +20,7 @@ p {
 }
 
 a {
+  color: #0f0f0f;
   font-size: 18px;
   text-decoration: none;
   text-transform: capitalize;
@@ -29,13 +30,6 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-/* MEDIA FOR 4k SCREEN */
-@media (max-width: 1920px) {
-  .container {
-    max-width: 1440px;
-  }
 }
 
 /*==============================================================
@@ -59,50 +53,16 @@ header ul {
   /* justify-content: space-between; */
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  header nav ul {
-    gap: 70px;
-  }
-}
-
-header ul li a {
-  color: #163235;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  header nav ul li a {
-    font-size: 30px;
-  }
-}
-
 .logo a {
   color: #4468e2;
+  align-items: center;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .logo a {
-    font-size: 30px;
-    align-items: center;
-  }
-}
-
 .logo img {
   width: 20px;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .logo img {
-    width: 45px;
-  }
 }
 
 .responsive-nave-button {
@@ -111,22 +71,8 @@ header ul li a {
   background-color: #4468e2;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .responsive-nave-button {
-    padding: 10px 30px;
-  }
-}
-
 .responsive-nave-button a {
   color: #fff;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .responsive-nave-button a {
-    font-size: 25px;
-  }
 }
 
 /* ------------------------------------------------------------------
@@ -151,12 +97,6 @@ header ul li a {
   position: relative;
 }
 
-@media (max-width: 1920px) {
-  .banner-wrapper {
-    max-width: 1000px;
-  }
-}
-
 .section-banner::before {
   content: "";
   top: 0;
@@ -172,23 +112,11 @@ header ul li a {
   margin-bottom: 40px;
 }
 
-@media (max-width: 1920px) {
-  .heading-box p {
-    font-size: 25px;
-  }
-}
-
 .heading-primary {
   font-size: 40px;
   font-weight: 600;
   margin: 0 0 12px 0;
   text-transform: uppercase;
-}
-
-@media (max-width: 1920px) {
-  .heading-primary {
-    font-size: 65px;
-  }
 }
 
 .explore-bar {
@@ -200,22 +128,10 @@ header ul li a {
   background-color: rgb(255 255 255 / 80%);
 }
 
-@media (max-width: 1920px) {
-  .explore-bar {
-    padding: 30px 45px;
-  }
-}
-
 .bar-box p {
   font-size: 20px;
   color: #151515;
   text-transform: capitalize;
-}
-
-@media (max-width: 1920px) {
-  .bar-box p {
-    font-size: 25px;
-  }
 }
 
 .bar-box span {
@@ -223,12 +139,6 @@ header ul li a {
   font-size: 16px;
   color: #7e7e7e;
   text-transform: capitalize;
-}
-
-@media (max-width: 1920px) {
-  .bar-box span {
-    font-size: 20px;
-  }
 }
 
 /* ------------------------------------------------------------------
@@ -256,24 +166,8 @@ header ul li a {
   background-color: #f0f4fc;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .icon-box {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-}
-
 .icon-box img {
   width: 40px;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .icon-box img {
-    width: 60px;
-  }
 }
 
 .heading-tertiary {
@@ -284,34 +178,11 @@ header ul li a {
   text-transform: capitalize;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .heading-tertiary {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-}
-
 .about-cart {
   border-radius: 10px;
   max-width: 250px;
   padding: 20px 10px;
   box-shadow: 8px 12px 12px 0px rgba(0, 0, 0, 0.078);
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .about-cart {
-    max-width: 300px;
-    padding: 30px 15px;
-  }
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .about-cart p {
-    font-size: 20px;
-  }
 }
 
 /* -------------------------------------------------------
@@ -326,27 +197,12 @@ header ul li a {
   max-width: 600px;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .heading-wrapper {
-    max-width: 800px;
-  }
-}
-
 .heading-secondary {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
   text-transform: capitalize;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .heading-secondary {
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
 }
 
 .button-group {
@@ -359,24 +215,10 @@ header ul li a {
   /* TEMPORARILE */
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .button-group {
-    border-bottom: 6px solid #c9c9c9;
-  }
-}
-
 .btn {
   border: none;
   text-transform: capitalize;
   background-color: transparent;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .btn {
-    font-size: 20px;
-  }
 }
 
 .btn-active::before {
@@ -387,14 +229,6 @@ header ul li a {
   bottom: -2px;
   border-radius: 2px;
   background-color: #000;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .btn-active::before {
-    height: 6px;
-    bottom: -6px;
-  }
 }
 
 .section-travel-picks .location-card-wraper {
@@ -409,15 +243,8 @@ header ul li a {
   flex: 1 1 calc(33% - 15px);
 }
 
-.location-card p {
+.location-description {
   margin-bottom: 15px;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .location-card p {
-    font-size: 20px;
-  }
 }
 
 .location-photo {
@@ -439,13 +266,6 @@ header ul li a {
   margin-right: 5px;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .card-icon img {
-    width: 35px;
-  }
-}
-
 /* TEMP */
 /* .card-icon img:not(:last-child) {
   margin-right: 5px;
@@ -457,16 +277,6 @@ header ul li a {
 .section-blogs {
   padding: 80px 0;
 }
-
-/* @media (max-width: 992px) {
-  .section-about .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-  }
-} */
 
 .blogs-gallery {
   display: flex;
@@ -545,36 +355,13 @@ header ul li a {
   box-shadow: 8px 12px 12px 0px rgba(0, 0, 0, 0.078);
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .comment-box {
-    max-width: 650px;
-    padding: 20px;
-  }
-}
-
 .quote-icon-img {
   width: 30px;
   height: 30px;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .quote-icon-img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
 .comment-content p {
   margin-bottom: 20px;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .comment-content p {
-    font-size: 20px;
-  }
 }
 
 .customer-details {
@@ -587,38 +374,16 @@ header ul li a {
   margin-right: 10px;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .customer-details img {
-    width: 50px;
-    margin-right: 15px;
-  }
-}
-
 .heading-fourth {
   font-size: 17px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .heading-fourth {
-    font-size: 20px;
-  }
-}
-
 figcaption span {
   font-size: 13px;
   color: #7e7e7e;
   text-transform: capitalize;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  figcaption span {
-    font-size: 17px;
-  }
 }
 
 /* -------------------------------------------------------
@@ -650,13 +415,6 @@ figcaption span {
   font-size: 15px;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .section-footer nav ul li a {
-    font-size: 20px;
-  }
-}
-
 .footer-icon-box {
   display: flex;
   align-items: center;
@@ -674,33 +432,148 @@ figcaption span {
   justify-content: center;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .footer-icon-box a {
-    width: 50px;
-    height: 50px;
-  }
-}
-
 .footer-icon-box a i {
   font-size: 15px;
   color: #fff;
-}
-
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
-  .footer-icon-box a i {
-    font-size: 20px;
-  }
 }
 
 .copyright-text {
   text-transform: capitalize;
 }
 
-/* MEDIA FOR 4k SCREEN  (HEADER)*/
-@media (max-width: 1920px) {
+/* ========================MEDIA QUERIES================== */
+/* -----------LARGER TABLET SCREEN-------- */
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /*------ HEADER------ */
+  header {
+    padding: 15px;
+  }
+
+  header a {
+    font-size: 15px;
+  }
+
+  nav ul,
+  .section-footer nav ul {
+    gap: 25px;
+  }
+
+  /*------ BANNER------ */
+  .banner-wrapper {
+    max-width: 500px;
+  }
+
+  .heading-primary {
+    font-size: 30px;
+  }
+
+  .heading-box p {
+    font-size: 14px;
+  }
+
+  .section-banner .responsive-nave-button a,
+  .explore-bar p {
+    font-size: 15px;
+  }
+
+  .explore-bar span {
+    font-size: 10px;
+  }
+
+  /*------ ABOUT------ */
+  .section-about .container {
+    gap: 10px;
+  }
+
+  .about-cart {
+    padding: 15px 10px;
+  }
+
+  .icon-box {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon-box img {
+    width: 35px;
+  }
+
+  .heading-tertiary {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .about-cart p {
+    font-size: 12px;
+  }
+
+  /*------ TRAVEL PICKS------ */
+  .heading-wrapper {
+    max-width: 500px;
+  }
+
+  .heading-secondary {
+    font-size: 24px;
+  }
+
+  .btn,
+  .location-card p {
+    font-size: 13px;
+  }
+
+  .location-card {
+    padding: 5px;
+  }
+
+  .card-icon img {
+    width: 20px;
+  }
+
+  /*------BLOGS------ */
+  .overly-left {
+    font-size: 25px;
+  }
+
+  .overly-right {
+    font-size: 22px;
+  }
+
+  /*------TESTIMONIAL------ */
+  .comment-content p {
+    font-size: 12px;
+  }
+
+  .customer-details img {
+    width: 30px;
+  }
+
+  .heading-fourth {
+    font-size: 15px;
+  }
+
+  figcaption span {
+    font-size: 10px;
+  }
+
+  /*------FOOTER------ */
   .copyright-text {
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  .section-footer .container {
+    padding: 20px;
+  }
+
+  .footer-icon-box a {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-icon-box a i {
+    font-size: 14px;
   }
 }
