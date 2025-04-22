@@ -442,7 +442,29 @@ figcaption span {
 }
 
 /* ========================MEDIA QUERIES================== */
-/* -----------LARGER TABLET SCREEN-------- */
+/* =========LARGER-LAPTOP-SCREEN(1140PX)========= */
+@media (max-width: 1140px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section-about .container {
+    gap: 20px;
+  }
+}
+
+/* =========LAPTOP-SCREEN(1024PX)========= */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .section-about .container {
+    gap: 15px;
+  }
+}
+
+/* ============LARGER-TABLET-SCREEN(992px)========= */
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -575,5 +597,39 @@ figcaption span {
 
   .footer-icon-box a i {
     font-size: 14px;
+  }
+}
+
+/* ============TABLET-SCREEN(768px)========= */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  /*------ ABOUT------ */
+  .section-about .container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .about-cart {
+    max-width: 290px;
+  }
+
+  /*------FOOTER------ */
+  .copyright-text,
+  .footer-icon-box a i,
+  .section-footer nav ul li a {
+    font-size: 12px;
+  }
+
+  .footer-icon-box a {
+    width: 18px;
+    height: 18px;
+  }
+
+  .section-footer nav ul {
+    gap: 15px;
   }
 }
