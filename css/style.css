@@ -7,8 +7,14 @@ TEXT COLOR #163235
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 li {
@@ -44,6 +50,7 @@ header {
 
   /* using it to give logo and contact some space */
   padding: 20px 30px;
+  position: relative;
 }
 
 header ul {
@@ -53,7 +60,7 @@ header ul {
   /* justify-content: space-between; */
 }
 
-.logo a {
+header .logo a {
   color: #4468e2;
   align-items: center;
   display: flex;
@@ -61,18 +68,40 @@ header ul {
   justify-content: center;
 }
 
-.logo img {
+header .logo a img {
   width: 20px;
 }
 
-.responsive-nave-button {
+header .responsive-nave-button,
+.commen-btn {
   padding: 5px 20px;
   border-radius: 50px;
   background-color: #4468e2;
 }
 
-.responsive-nave-button a {
+header .responsive-nave-button a,
+.commen-btn a {
   color: #fff;
+}
+
+/* MOBILE NAVIGATION */
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 25px;
+  width: 25px;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ------------------------------------------------------------------
@@ -380,7 +409,7 @@ header ul {
   text-transform: capitalize;
 }
 
-figcaption span {
+.testimonial-box figcaption span {
   font-size: 13px;
   color: #7e7e7e;
   text-transform: capitalize;
@@ -464,7 +493,7 @@ figcaption span {
   }
 }
 
-/* ============LARGER-TABLET-SCREEN(992px)========= */
+/* ===================LARGER-TABLET-SCREEN(992px)================== */
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -497,7 +526,7 @@ figcaption span {
     font-size: 14px;
   }
 
-  .section-banner .responsive-nave-button a,
+  .section-banner .commen-btn a,
   .explore-bar p {
     font-size: 15px;
   }
@@ -577,7 +606,7 @@ figcaption span {
     font-size: 15px;
   }
 
-  figcaption span {
+  .testimonial-box figcaption span {
     font-size: 10px;
   }
 
@@ -600,12 +629,8 @@ figcaption span {
   }
 }
 
-/* ============TABLET-SCREEN(768px)========= */
+/* =======================TABLET-SCREEN(768px)===================== */
 @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
-
   /*------ ABOUT------ */
   .section-about .container {
     flex-wrap: wrap;
@@ -631,5 +656,215 @@ figcaption span {
 
   .section-footer nav ul {
     gap: 15px;
+  }
+}
+
+/* ======================TABLET-SCREEN(640px)====================== */
+@media (max-width: 640px) {
+  /* -----MOBILE NAVIGATION----- */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  header nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide the navigation */
+    /* display none dosenot allows transition */
+    /* display:none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mous and keyboard */
+    pointer-events: none;
+
+    /* Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  /*------BANNER------ */
+
+  .banner-wrapper {
+    max-width: 450px;
+  }
+
+  .commen-btn {
+    padding: 5px 10px;
+  }
+
+  .commen-btn a {
+    font-size: 12px;
+  }
+
+  /*------ABOUT------ */
+
+  .section-about {
+    padding: 60px 0;
+  }
+
+  .section-about .container {
+    display: block;
+  }
+
+  .about-cart {
+    max-width: 100%;
+  }
+
+  .about-cart:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /*------TRAVEL PICKS------ */
+  .section-travel-picks {
+    padding: 60px 0;
+  }
+
+  .heading-wrapper {
+    max-width: 500px;
+  }
+
+  .location-card {
+    flex: 1 1 calc(40% - 15px);
+  }
+
+  .button-group .btn {
+    font-size: 12px;
+  }
+
+  .heading-secondary {
+    font-size: 20px;
+  }
+
+  /*------BLOG------ */
+  .section-blogs {
+    padding: 60px 0;
+  }
+
+  .blogs-gallery {
+    flex-direction: column;
+  }
+
+  .overly-left {
+    font-size: 20px;
+  }
+
+  .overly-right {
+    font-size: 20px;
+  }
+
+  /*------TESTIMONIAL------ */
+  .section-testimonial {
+    padding: 60px 0;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /*------FOOTER------ */
+  .section-footer {
+    padding: 60px 0;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+/* ======================TABLET-SCREEN(480px)====================== */
+@media (max-width: 480px) {
+  /*------HEADER------ */
+  header {
+    padding: 10px;
+  }
+
+  /*------BANNER------ */
+  .banner-wrapper {
+    max-width: 350px;
+  }
+
+  .explore-bar {
+    /* flex-wrap: wrap; */
+    padding: 10px;
+  }
+
+  .bar-box p {
+    font-size: 12px;
+  }
+  .bar-box span {
+    font-size: 10px;
+  }
+
+  .commen-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-banner .commen-btn a {
+    font-size: 10px;
+  }
+
+  /*------TRAVEL------ */
+  .button-group .btn {
+    font-size: 10px;
+  }
+
+  .location-card-wraper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* ======================SMALL-MOBILE(320px)====================== */
+@media (max-width: 320px) {
+  /*------BANNER------ */
+
+  .heading-primary {
+    font-size: 25px;
+  }
+  .heading-box p {
+    font-size: 12px;
   }
 }
